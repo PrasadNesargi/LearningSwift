@@ -351,6 +351,9 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRt-Wi-lUy">
                                 <rect key="frame" x="0.0" y="122" width="375" height="545"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Fkp-bN-0H7" id="aX6-CA-iXj"/>
+                                </connections>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oot-hy-qpw">
                                 <rect key="frame" x="16" y="32" width="46" height="30"/>
@@ -360,6 +363,10 @@
                                     <action selector="back:" destination="Fkp-bN-0H7" eventType="touchUpInside" id="k6z-es-6Pi"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="V9U-Uf-ULi">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -371,6 +378,7 @@
                         <viewLayoutGuide key="safeArea" id="TD9-Xf-aIt"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="V9U-Uf-ULi" id="8A7-1H-xyC"/>
                         <outlet property="back" destination="Oot-hy-qpw" id="d3b-II-bbU"/>
                         <outlet property="webView" destination="bRt-Wi-lUy" id="3yV-T4-sRT"/>
                     </connections>

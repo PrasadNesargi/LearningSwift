@@ -64,19 +64,35 @@
 		504933801FE1066500EA9F74 /* PracticeProject */ = {
 			isa = PBXGroup;
 			children = (
+				50A4B9AE1FE8E26F007E771A /* Xib & Cell */,
+				50A4B9AD1FE8E252007E771A /* Controllers */,
 				504933811FE1066500EA9F74 /* AppDelegate.swift */,
 				504933851FE1066500EA9F74 /* Main.storyboard */,
 				504933881FE1066500EA9F74 /* Assets.xcassets */,
 				5049338A1FE1066500EA9F74 /* LaunchScreen.storyboard */,
 				5049338D1FE1066500EA9F74 /* Info.plist */,
-				50DBC63F1FE2A78A002921F8 /* ViewController.swift */,
+			);
+			path = PracticeProject;
+			sourceTree = "<group>";
+		};
+		50A4B9AD1FE8E252007E771A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50A8FA191FE7A75900A525B3 /* WebViewController.swift */,
 				50DBC6411FE2A8EB002921F8 /* MenuTableViewController.swift */,
+				50DBC63F1FE2A78A002921F8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		50A4B9AE1FE8E26F007E771A /* Xib & Cell */ = {
+			isa = PBXGroup;
+			children = (
 				50DBC6431FE2A8FB002921F8 /* MenuTableViewCell.swift */,
 				50B162F01FE449310095443A /* ContentsTableViewCell.swift */,
 				50B162F11FE449320095443A /* ContentsTableViewCell.xib */,
-				50A8FA191FE7A75900A525B3 /* WebViewController.swift */,
 			);
-			path = PracticeProject;
+			path = "Xib & Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

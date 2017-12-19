@@ -13,7 +13,11 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
     var vcInstance = ViewController()
     var menuTitleArray = ["Home","Team","Enquiry","Departments","Contact"]
     
-    var menuLinks = ["http://demo.technowebmart.com/pandeyji_mob_app/main.html","http://demo.technowebmart.com/pandeyji_mob_app/doctors.html","http://demo.technowebmart.com/pandeyji_mob_app/appointment.html","http://demo.technowebmart.com/pandeyji_mob_app/departments.html","http://demo.technowebmart.com/pandeyji_mob_app/contact.html"]
+    var menuLinks = ["http://demo.technowebmart.com/pandeyji_mob_app/main.html",
+                     "http://demo.technowebmart.com/pandeyji_mob_app/doctors.html",
+                     "http://demo.technowebmart.com/pandeyji_mob_app/appointment.html",
+                     "http://demo.technowebmart.com/pandeyji_mob_app/departments.html",
+                     "http://demo.technowebmart.com/pandeyji_mob_app/contact.html"]
     
     @IBOutlet weak var tableView: UITableView!
     
