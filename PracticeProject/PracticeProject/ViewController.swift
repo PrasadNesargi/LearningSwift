@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class ViewController: UIViewController{
+   
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnLogin: UIView!
     @IBOutlet weak var btnLogout: UIView!
@@ -125,8 +125,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         UIView.animate(withDuration: 0.5) { ()->Void in
         self.menuVC.view.frame = CGRect(x: 0, y: 60, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
         self.menuVC.view.backgroundColor = UIColor.black.withAlphaComponent(0)
-            self.addChildViewController(self.menuVC)
-            self.view.addSubview(self.menuVC.view)
+        self.addChildViewController(self.menuVC)
+        self.view.addSubview(self.menuVC.view)
         AppDelegate.menu_bool = false
         }
     }
@@ -139,17 +139,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         AppDelegate.menu_bool = true
     }
+}
+       
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contentsText.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //Using Button
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsTableViewCell", for: indexPath)as! ContentsTableViewCell
-//            cell.showBtn.setImage(contents[indexPath.row], for: .normal)
-//            cell.showBtn.setTitle(contentsText[indexPath.row], for: .normal)
+//        cell.showBtn.setImage(contents[indexPath.row], for: .normal)
+//        cell.showBtn.setTitle(contentsText[indexPath.row], for: .normal)
 //        cell.showBtn.tag = indexPath.row
 
         //Using Cell
@@ -200,7 +202,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
 //        return 150
 //    }
-    
-    
 }
+
 
