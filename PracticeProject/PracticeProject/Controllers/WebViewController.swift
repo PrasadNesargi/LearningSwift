@@ -31,8 +31,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         loadUrl()
         
     }
-  
-    
+
     func webViewDidFinishLoad(_ webView: UIWebView) {
         activityIndicator.isHidden = true
     }
