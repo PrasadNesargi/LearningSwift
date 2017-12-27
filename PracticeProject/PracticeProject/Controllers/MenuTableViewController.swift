@@ -6,11 +6,15 @@
 //  Copyright © 2017 bitjini. All rights reserved.
 //
 
-import UIKit
-
+import UIKit    
+protocol MenuDelegate {
+    func closeMenu()
+}
 class MenuTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     let defaults = UserDefaults.standard
     var vcInstance = ViewController()
+    var  menuDelegate : MenuDelegate?
     var menuTitleArray = ["Home","Team","Enquiry","Departments","Contact"]
     
     var menuLinks = ["http://demo.technowebmart.com/pandeyji_mob_app/main.html",
@@ -36,15 +40,25 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
         return menuTitleArray.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! MenuTableViewCell
         cell.menuTitle.text = menuTitleArray[indexPath.row]
+        cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        defaults.set(menuLinks[indexPath.row], forKey: "index")
+        defaults.set(menuLinks[indexPath.row], forKey: "pagePath")
+        if (indexPath.row == 0 && AppDelegate.menu_bool == false) {
+            menuDelegate?.closeMenu()
+            self.navigationController?.popToRootViewController(animated: true)
+        } else {
         let nextVC = storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        self.navigationController?.pushViewController(nextVC, animated: false)
+        }
     }
 }

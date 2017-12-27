@@ -11,9 +11,15 @@
 		504933871FE1066500EA9F74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504933851FE1066500EA9F74 /* Main.storyboard */; };
 		504933891FE1066500EA9F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504933881FE1066500EA9F74 /* Assets.xcassets */; };
 		5049338C1FE1066500EA9F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5049338A1FE1066500EA9F74 /* LaunchScreen.storyboard */; };
+		505320071FED7CC7005A4C47 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505320061FED7CC6005A4C47 /* LoginView.xib */; };
+		505320091FED7CFB005A4C47 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505320081FED7CFB005A4C47 /* LoginView.swift */; };
+		50A71F151FEA3A4F007B53C9 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A71F141FEA3A4F007B53C9 /* HeaderView.xib */; };
+		50A71F171FEA3A97007B53C9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A71F161FEA3A97007B53C9 /* HeaderView.swift */; };
 		50A8FA1A1FE7A75900A525B3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A8FA191FE7A75900A525B3 /* WebViewController.swift */; };
 		50B162F21FE449320095443A /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B162F01FE449310095443A /* ContentsTableViewCell.swift */; };
 		50B162F31FE449320095443A /* ContentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B162F11FE449320095443A /* ContentsTableViewCell.xib */; };
+		50B764A51FECF6EC008AF53F /* WindowRegister.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B764A41FECF6EC008AF53F /* WindowRegister.xib */; };
+		50B764A71FECF787008AF53F /* WindowRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B764A61FECF787008AF53F /* WindowRegister.swift */; };
 		50DBC6401FE2A78A002921F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBC63F1FE2A78A002921F8 /* ViewController.swift */; };
 		50DBC6421FE2A8EB002921F8 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBC6411FE2A8EB002921F8 /* MenuTableViewController.swift */; };
 		50DBC6441FE2A8FB002921F8 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBC6431FE2A8FB002921F8 /* MenuTableViewCell.swift */; };
@@ -26,9 +32,15 @@
 		504933881FE1066500EA9F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5049338B1FE1066500EA9F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5049338D1FE1066500EA9F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505320061FED7CC6005A4C47 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		505320081FED7CFB005A4C47 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		50A71F141FEA3A4F007B53C9 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		50A71F161FEA3A97007B53C9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		50A8FA191FE7A75900A525B3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		50B162F01FE449310095443A /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
 		50B162F11FE449320095443A /* ContentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentsTableViewCell.xib; sourceTree = "<group>"; };
+		50B764A41FECF6EC008AF53F /* WindowRegister.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WindowRegister.xib; sourceTree = "<group>"; };
+		50B764A61FECF787008AF53F /* WindowRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowRegister.swift; sourceTree = "<group>"; };
 		50DBC63F1FE2A78A002921F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50DBC6411FE2A8EB002921F8 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		50DBC6431FE2A8FB002921F8 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +103,12 @@
 				50DBC6431FE2A8FB002921F8 /* MenuTableViewCell.swift */,
 				50B162F01FE449310095443A /* ContentsTableViewCell.swift */,
 				50B162F11FE449320095443A /* ContentsTableViewCell.xib */,
+				50B764A41FECF6EC008AF53F /* WindowRegister.xib */,
+				50B764A61FECF787008AF53F /* WindowRegister.swift */,
+				505320061FED7CC6005A4C47 /* LoginView.xib */,
+				505320081FED7CFB005A4C47 /* LoginView.swift */,
+				50A71F141FEA3A4F007B53C9 /* HeaderView.xib */,
+				50A71F161FEA3A97007B53C9 /* HeaderView.swift */,
 			);
 			path = "Xib & Cell";
 			sourceTree = "<group>";
@@ -155,8 +173,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B764A51FECF6EC008AF53F /* WindowRegister.xib in Resources */,
 				5049338C1FE1066500EA9F74 /* LaunchScreen.storyboard in Resources */,
+				50A71F151FEA3A4F007B53C9 /* HeaderView.xib in Resources */,
 				504933891FE1066500EA9F74 /* Assets.xcassets in Resources */,
+				505320071FED7CC7005A4C47 /* LoginView.xib in Resources */,
 				504933871FE1066500EA9F74 /* Main.storyboard in Resources */,
 				50B162F31FE449320095443A /* ContentsTableViewCell.xib in Resources */,
 			);
@@ -169,12 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505320091FED7CFB005A4C47 /* LoginView.swift in Sources */,
+				50B764A71FECF787008AF53F /* WindowRegister.swift in Sources */,
 				50DBC6401FE2A78A002921F8 /* ViewController.swift in Sources */,
 				50A8FA1A1FE7A75900A525B3 /* WebViewController.swift in Sources */,
 				504933821FE1066500EA9F74 /* AppDelegate.swift in Sources */,
 				50B162F21FE449320095443A /* ContentsTableViewCell.swift in Sources */,
 				50DBC6441FE2A8FB002921F8 /* MenuTableViewCell.swift in Sources */,
 				50DBC6421FE2A8EB002921F8 /* MenuTableViewController.swift in Sources */,
+				50A71F171FEA3A97007B53C9 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
